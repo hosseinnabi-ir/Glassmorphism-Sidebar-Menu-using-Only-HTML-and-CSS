@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: url('../images/wallpaper.jpg') left;
+}
+
+nav {
+    width: 90px;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .06);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-right: 1px solid rgba(255, 255, 255, .15);
+    transition: .4s;
+}
+
+nav:hover {
+    width: 300px;
+}
+
+nav .nav-list-top,
+nav .nav-list-bottom {
+    position: absolute;
+    width: 100%;
+}
+
+nav .nav-list-top {
+    top: 32%;
+}
+
+nav .nav-list-bottom {
+    bottom: 0;
+}
+
+nav .nav-brand img {
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 15px;
+    transition: .4s;
+}
+
+nav:hover .nav-brand img {
+    width: 120px;
+    margin-top: 30px;
+}
+
+nav .nav-brand .info {
+    text-align: center;
+    pointer-events: none;
+    opacity: 0;
+}
+
+nav:hover .nav-brand .info {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+nav .nav-brand h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+nav .nav-brand p {
+    color: #f1f1f1;
+    font-size: 14px;
+}
+
+nav .nav-item {
+    cursor: pointer;
+    padding: 0 25px;
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+    transition: .4s;
+}
+
+nav .nav-item:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+nav .nav-item i {
+    margin: 0 6px;
+    font-size: 26px;
+    color: #dddddd;
+    transform: translateY(5px);
+    transition: .4s;
+}
+
+nav:hover .nav-item i {
+    color: #f4c402;
+}
+
+nav .nav-item span {
+    color: #ffffff;
+    font-size: 18px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+nav:hover .nav-item span {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
